@@ -2,13 +2,13 @@ Packages in JAVA
 ----------------
 
 -------------------------------------------------------------------------------
-	                             |  private |	default	| protected	|  public  |
+                                 |  private |  default  | protected |  public  |
 --------------------------------------------------------------------------------                      
-Same class	                     |   Yes	|    Yes	|    Yes	|          |
-Same Package Sub Class	         |   No	    |    Yes	|    Yes	|          |
-Same Package non Sub Class	     |   No    	|    Yes    |	 Yes	|          |
-Different Package Sub Class	     |   No	    |    No	    |    Yes	|          |
-Different Package non Sub Class	 |   No	    |    No	    |    No	    |          |
+Same class                       |   Yes    |    Yes    |    Yes    |   Yes    |
+Same Package Sub Class           |   No     |    Yes    |    Yes    |   Yes    |
+Same Package non Sub Class       |   No     |    Yes    |    Yes    |   Yes    |
+Different Package Sub Class      |   No     |    No     |    Yes    |   Yes    |
+Different Package non Sub Class  |   No     |    No     |    No     |   Yes    |
 --------------------------------------------------------------------------------
 ---------
 private
