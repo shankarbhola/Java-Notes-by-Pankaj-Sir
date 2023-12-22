@@ -86,3 +86,25 @@ public class A {
 
 -> To convert .java to .class file we require compiler.
 -> To run .class file we require JRE (Java Runtime Environment)
+-> When we dont create constructor in .java file then during compilation automatically no args constructor with empty body get's created.
+Note
+----
+whenever we create object it is mandatory to call constructor.
+
+public class A {
+	public static void main(String[] args) {
+		A a1 = new A();
+		//whenever we create object it is mandotary to call constructor
+	}
+}
+
+--
+public class A {
+	A(){   // got added
+		
+	}
+	public static void main(String[] args) {
+		A a1 = new A();
+		//whenever we create object it is mandotary to call constructor
+	}
+}
