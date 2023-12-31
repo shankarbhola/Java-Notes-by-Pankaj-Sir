@@ -10,7 +10,7 @@ B --> F((wait))
 F -- notify, notify all--> C
 
 ```
-```
+```java
 public class A extends Thread {
 	int total = 0;
 
@@ -40,4 +40,4 @@ public class B {
 	}
 }
 
-```java
+```
