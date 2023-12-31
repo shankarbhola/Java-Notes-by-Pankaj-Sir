@@ -1,0 +1,64 @@
+Lower case dand Upper case
+--------------------------
+final public class A {
+	public static void main(String[] args) {
+		String str = "Pankaj Sir AcAadeMy";
+		System.out.println(str.toLowerCase());
+		System.out.println(str.toUpperCase());
+	}
+}
+
+remove white space
+------------------
+final public class A {
+	public static void main(String[] args) {
+		String str = "        Pankaj Sir AcAadeMy       ";
+		System.out.println(str);
+		System.out.println(str.trim());
+	}
+}
+
+check string start and ends with
+---------------------------------
+final public class A {
+	public static void main(String[] args) {
+		String str = "aabbababaabbaz";
+		System.out.println(str.startsWith("a"));
+		System.out.println(str.endsWith("z"));
+		System.out.println(str.startsWith("x"));
+		System.out.println(str.endsWith("x"));
+	}
+}
+
+check string length
+-------------------
+final public class A {
+	public static void main(String[] args) {
+		String str = "aabbababaabbaz";
+		System.out.println(str.length());
+	}
+}
+
+ValueOf()
+---------
+ValueOf  method converts given type such as int, long, float, double, boolean, and char array to string  
+
+final public class A {
+	public static void main(String[] args) {
+		int  i = 10;
+		String str = String.valueOf(i);
+		System.out.println(str);
+	}
+}
+
+---
+final public class A {
+	public static void main(String[] args) {
+		char[]  i = {'a', 'b', 'c'};
+		String str = String.valueOf(i);
+		System.out.println(str);
+	}
+}
+
+Wap to find how may letter 'a' and 'b' in the given string aabaaaababa
+find duplicate elements in the given array and remove it
