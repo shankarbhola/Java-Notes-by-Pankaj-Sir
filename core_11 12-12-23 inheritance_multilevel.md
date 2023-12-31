@@ -18,7 +18,7 @@ public class B extends A{
 }
 ```
 
-####Multilevel Inheritance
+### Multilevel Inheritance ###
 
 ```mermaid
 graph LR
@@ -59,7 +59,7 @@ public void test3() {
 }
 ```
 
-####Note
+### Note ###
 * Java doesnot support multiple Inheritance at class level but supportS multiple inheritance in interfaces
 * Multiple inheritance leads to diamond problem as shown in below example.
 
@@ -99,9 +99,9 @@ A((A))-->B((B))
 C((A))--> D((B))
 ```
 
-##Non sub clases vs sub clases
+## Non sub clases vs sub clases ##
 
-####Non sub clases
+### Non sub clases ###
 
 ```java
 package p1;
@@ -119,7 +119,7 @@ public class B{
 }
 ```
 
-####Sub clases
+### Sub clases ###
 
 ```java
 package p1;

@@ -1,4 +1,4 @@
-####Different Package Sub class (private)
+### Different Package Sub class (private) ###
 
 ```java
 package p1;
@@ -27,7 +27,7 @@ public class C extends A{
 ```
 
 
-####Different Package non Sub class (private)
+### Different Package non Sub class (private) ###
 
 ```java
 package p1;
@@ -55,9 +55,9 @@ public class C {
 ```
 
 
-##Default
+## Default ##
 
-####Same class
+### Same class ###
 
 ```java
  package p1;
@@ -76,7 +76,7 @@ public class A {
 }
 ```
 
-####Same Package sub class (default)
+### Same Package sub class (default) ###
 
 ```java
 package p1;
@@ -104,7 +104,7 @@ public class B extends A {
 }
 ```
 
-####Same PAckage non sub class (default)
+### Same PAckage non sub class (default) ###
 
 ```java
 package p1;
@@ -131,7 +131,7 @@ public class B {
 }
 ```
 
-####Different Package Sub class (default)
+### Different Package Sub class (default) ###
 ---------------------------
 ```java
 package p1;
@@ -160,7 +160,7 @@ public class C extends A {
 }
 ```
 
-####Different Package non Sub class (default)
+### Different Package non Sub class (default) ###
 
 ```java
 package p1;
@@ -191,8 +191,8 @@ public class C {
 
 ```
 
-##Protected
-####Same class (protected)
+## Protected ##
+### Same class (protected) ###
 
 ```java
 package p1;
@@ -211,7 +211,7 @@ public class A {
 }
 ```
 
-####Same package sub class (protected)
+### Same package sub class (protected) ###
 
 ```java
 package p1;
@@ -238,7 +238,7 @@ public class B extends A {
 }
 ```
 
-####Same package non sub class (protected)
+### Same package non sub class (protected) ###
 
 ```java
 package p1;
@@ -267,7 +267,7 @@ public class B{
 ```
 
 
-####Different Package Sub class (protected)
+### Different Package Sub class (protected) ###
 
 ```java
 package p1;
@@ -297,7 +297,7 @@ public class C extends A{
 }
 ```
 
-####Different Package non sub class (protected)
+### Different Package non sub class (protected) ###
 
 ```java
 package p1;

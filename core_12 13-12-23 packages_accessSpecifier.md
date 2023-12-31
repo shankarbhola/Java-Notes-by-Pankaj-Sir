@@ -9,10 +9,10 @@
 |Different Package Sub Class      |   No     |    No     |    Yes    |   Yes    |
 |Different Package non Sub Class  |   No     |    No     |    No     |   Yes    |
 
-##private
+## private ##
 If you make a variable/method private then you cannot access that outside the class.
 
-####Same class (private)
+### Same class (private) ###
 ```java
 package p1;
 
@@ -30,7 +30,7 @@ public class A {
 }
 ```
 
-####Same package sub class (private)
+### Same package sub class (private) ###
 ```java
 package p1;
 
@@ -57,7 +57,7 @@ public class B extends A {
 }
 ```
 
-####Same package non sub class (private)
+### Same package non sub class (private) ###
 
 ```java
 package p1;

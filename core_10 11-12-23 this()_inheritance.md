@@ -1,4 +1,4 @@
-##this()
+## this() ##
 * Is used to call a constructor from another constructor
 
 ```java
@@ -49,7 +49,7 @@ public class A {
 	}
 }
 ```
-##Constructor Chaining
+## Constructor Chaining ##
 
 When you call one constructor from another constructor 
 
@@ -85,8 +85,8 @@ public class A {
 }
 ```
 
-#OOPS
-##Inheritance
+# OOPS #
+## Inheritance ##
 Here we inherit the members of parent class to child class so that we can refuse these members.
 
 ```java

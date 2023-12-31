@@ -1,4 +1,4 @@
-##Constructors in java
+## Constructors in java ##
 * Constructors should have some name as that of class.
 * To call Constructor we should create object, whenever object is created Constructor will get called.
 
@@ -26,7 +26,7 @@ public class A {
 }
 ```
 
-####Constructor with parameter
+### Constructor with parameter ###
 
 ```java
 public class A {
@@ -39,7 +39,7 @@ public class A {
 }
 ```
 
-####Constructor overloading
+### Constructor overloading ###
 * Here we create more than one Constructor in same provided they have different number of arguments or different types of arguments
 
 ````java
@@ -92,7 +92,7 @@ B -- (run) JRE -->C[Output]
 * To run .class file we require JRE (Java Runtime Environment)
 * When we dont create constructor in .java file then during compilation automatically no args constructor with empty body get's created.
 
-#####Note
+### Note ###
 whenever we create object it is mandatory to call constructor.
 
 ```java

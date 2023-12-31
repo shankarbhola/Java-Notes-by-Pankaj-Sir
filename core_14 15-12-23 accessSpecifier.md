@@ -1,5 +1,5 @@
-##public
-####Same class (public)
+## public ##
+### Same class (public) ###
 
 ```java
 package p1;
@@ -18,7 +18,7 @@ public class A {
 }
 ```
 
-####Same package sub class (public)
+### Same package sub class (public) ###
 
 ```java
 package p1;
@@ -46,7 +46,7 @@ public class B extends A {
 }
 ```
 
-####Same package non sub class (public)
+### Same package non sub class (public) ###
 
 ```java
 package p1;
@@ -74,7 +74,7 @@ public class B{
 }
 ```
 
-####Different Package Sub class (public)
+### Different Package Sub class (public) ###
 
 ```java
 package p1;
@@ -104,7 +104,7 @@ public class C extends A{
 }
 ```
 
-####Different Package non sub class (public)
+### Different Package non sub class (public) ###
 ```java
 
 package p1;
@@ -134,7 +134,7 @@ public class C{
 }
 ```
 
-##Classes with access specifier
+## Classes with access specifier ##
 
 * A class cannot be private / protected
 * A class can be only public & default
@@ -194,7 +194,7 @@ public class C extends A{
 }
 ```
 
-##Constructor with access specifier
+## Constructor with access specifier ##
 
 * If a Constructor is made private then it's object cannot be created in Different class
 

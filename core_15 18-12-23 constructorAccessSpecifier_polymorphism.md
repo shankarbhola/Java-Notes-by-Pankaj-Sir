@@ -1,4 +1,4 @@
-####Default Constructor
+### Default Constructor ###
 
 * If you create default constructor in a class then its object can be created in same class & same package but not outside the package.
 
@@ -65,7 +65,7 @@ public class C extends A{ //Error
 ```
 
 
-####Protected Constructor
+### Protected Constructor ###
 * If you create Protected constructor in a class then its object can be created in same and same package but not outside the package.
 
 ```java
@@ -131,7 +131,7 @@ public class C extends A {
 }
 ```
 
-####Public Constructor
+### Public Constructor ###
 
 * If you create d public constructor in a class then its object can be created in same class and same package
 
@@ -197,17 +197,17 @@ public class C{
 }
 ```
 
-#Polymorphism
-####Note
+# Polymorphism #
+### Note ###
 
 Polymorphism is applicable only on methods 
 Here we develop features such that it can take more then one from depending on situation.
 
-####Types of Polymorphism
+### Types of Polymorphism ###
 1 : Compile-time Polymorphism (method overloading)
 2 : Run-time Polymorphism (method overriding)
 
-####Run-time Polymorphism (method overriding)
+### Run-time Polymorphism (method overriding) ###
 Here we inherit the method from parent class and then modify the logic on inherited method in the child class.
 
 ```java

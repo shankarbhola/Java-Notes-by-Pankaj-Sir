@@ -28,7 +28,7 @@ public class PlatinumAccount extends GoldAccount{
 }
 ```
 
-####Note
+### Note ###
 
 @Override annotation will intruct compiler to check whether Override is happening or not.
 
@@ -129,7 +129,7 @@ public class B extends A{
 }
 ```
 
-####Compile-time Polymorphism (method overloading)
+### Compile-time Polymorphism (method overloading) ###
 
 Here we create more then one method with same name in same class provided they have different number of arguments or different types of arguments
 
