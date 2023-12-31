@@ -40,7 +40,7 @@ public class A {
 
 * If we write only code after return keyword we will  get unrechable Error.
 
-####return value
+#### return value ####
 * We can use return value keyword only inside not a void method & it is mandatory to be used.
 
 ```java
@@ -67,7 +67,7 @@ class A{
 }
 ```
 
-##Method arguments
+##Method arguments ##
 ```java
 class A{
     psvm(){
