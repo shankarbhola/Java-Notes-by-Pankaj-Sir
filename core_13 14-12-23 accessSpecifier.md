@@ -1,5 +1,6 @@
-Different Package Sub class (private)
----------------------------
+####Different Package Sub class (private)
+
+```java
 package p1;
 
 public class A {
@@ -9,7 +10,9 @@ public class A {
 		System.out.println("From Test");
 	}
 }
+```
 
+```java
 package p2;
 
 import p1.A;
@@ -21,10 +24,12 @@ public class C extends A{
 		c1.test(); //Error
 	}
 }
+```
 
 
-Different Package non Sub class (private)
---------------------------------
+####Different Package non Sub class (private)
+
+```java
 package p1;
 
 public class A {
@@ -34,7 +39,8 @@ public class A {
 		System.out.println("From Test");
 	}
 }
-
+```
+```java
 package p2;
 
 import p1.A;
@@ -46,13 +52,14 @@ public class C {
 		a1.test();//Error
 	}
 }
+```
 
--------
-Default
--------
 
-Same class
-----------
+##Default
+
+####Same class
+
+```java
  package p1;
 
 public class A {
@@ -67,9 +74,11 @@ public class A {
 		a1.test();
 	}
 }
+```
 
-Same PAckage sub class (default)
-----------------------
+####Same Package sub class (default)
+
+```java
 package p1;
 
 public class A {
@@ -80,7 +89,9 @@ public class A {
 	}
 	 
 }
+```
 
+```java
 package p1;
 
 public class B extends A {
@@ -91,9 +102,11 @@ public class B extends A {
 		b1.test();
 	}
 }
+```
 
-Same PAckage non sub class (default)
-----------------------
+####Same PAckage non sub class (default)
+
+```java
 package p1;
 
 public class A {
@@ -102,9 +115,10 @@ public class A {
 	 void test() {
 		System.out.println("From Test");
 	}
-	 
 }
+```
 
+```java
 package p1;
 
 public class B {
@@ -115,9 +129,11 @@ public class B {
 		a1.test();
 	}
 }
+```
 
-Different Package Sub class (default)
+####Different Package Sub class (default)
 ---------------------------
+```java
 package p1;
 
 public class A {
@@ -128,7 +144,8 @@ public class A {
 	}
 	 
 }
-
+```
+```java
 package p2;
 
 import p1.A;
@@ -141,9 +158,11 @@ public class C extends A {
 		c1.test(); //Error
 	}
 }
+```
 
-Different Package non Sub class (default)
----------------------------
+####Different Package non Sub class (default)
+
+```java
 package p1;
 
 public class A {
@@ -154,7 +173,9 @@ public class A {
 	}
 	 
 }
+```
 
+```java
 package p2;
 
 import p1.A;
@@ -168,11 +189,12 @@ public class C {
 	}
 }
 
----------
-Protected
----------
-Same class (protected)
-----------
+```
+
+##Protected
+####Same class (protected)
+
+```java
 package p1;
 
 public class A {
@@ -187,9 +209,11 @@ public class A {
 		a1.test();
 	}
 }
+```
 
-Same package sub class (protected)
------------------------
+####Same package sub class (protected)
+
+```java
 package p1;
 
 public class A {
@@ -200,7 +224,8 @@ public class A {
 	}
 	 
 }
-
+```
+```java
 package p1;
 
 public class B extends A {
@@ -211,9 +236,11 @@ public class B extends A {
 		b1.test();
 	}
 }
+```
 
-Same package non sub class (protected)
----------------------------
+####Same package non sub class (protected)
+
+```java
 package p1;
 
 public class A {
@@ -224,7 +251,9 @@ public class A {
 	}
 	 
 }
+```
 
+```java
 package p1;
 
 public class B{
@@ -235,10 +264,12 @@ public class B{
 		a1.test();
 	}
 }
+```
 
 
-Different Package Sub class (protected)
----------------------------
+####Different Package Sub class (protected)
+
+```java
 package p1;
 
 public class A {
@@ -249,7 +280,9 @@ public class A {
 	}
 	 
 }
+```
 
+```java
 package p2;
 
 import p1.A;
@@ -262,10 +295,11 @@ public class C extends A{
 		c1.test();
 	}
 }
+```
 
-Different Package non sub class (protected)
--------------------------------
+####Different Package non sub class (protected)
 
+```java
 package p1;
 
 public class A {
@@ -276,7 +310,9 @@ public class A {
 	}
 	 
 }
+```
 
+```java
 package p2;
 
 import p1.A;
@@ -289,3 +325,4 @@ public class C{
 		a1.test(); //Error
 	}
 }
+```

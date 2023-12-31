@@ -1,7 +1,7 @@
-this()
-------
--> Is used to call a constructor from another constructor
-ex:
+##this()
+* Is used to call a constructor from another constructor
+
+```java
 package p1;
 public class A { 
 	  A(){
@@ -14,8 +14,9 @@ public class A {
 		A a1 = new A(100);
 	}
 }
-
-ex:
+```
+---
+```java
 package p1;
 public class A { 
 	  A(){
@@ -29,7 +30,8 @@ public class A {
 		
 	}
 }
-ex:
+```
+```java
 package p1;
 public class A { 
 	  A(){
@@ -46,11 +48,12 @@ public class A {
 		A a1 = new A();
 	}
 }
----------------------
-Constructor Chaining
----------------------
+```
+##Constructor Chaining
+
 When you call one constructor from another constructor 
 
+```java
 package p1;
 public class A { 
 	  A(){
@@ -63,8 +66,10 @@ public class A {
 		A a1 = new A(100);
 	}
 }
+```
 
--> While calling a constructor this() keyword should always be first statement inside another constructor.
+* While calling a constructor this() keyword should always be first statement inside another constructor.
+```java
 package p1;
 public class A { 
 	  A(){
@@ -78,14 +83,13 @@ public class A {
 		A a1 = new A(100);
 	}
 }
+```
 
----------
- O O P S
-------------
-Inheritance
-------------
+#OOPS
+##Inheritance
 Here we inherit the members of parent class to child class so that we can refuse these members.
 
+```java
 package p1;
 public class Animal {
 	public void eat() {
@@ -98,8 +102,9 @@ public class Animal {
 		System.out.println("Walking");
 	}
 }
-
-
+```
+---
+```java
 package p1;
 public class Cat extends Animal{
 	public void noise() {
@@ -113,3 +118,4 @@ public class Cat extends Animal{
 		cat.noise();
 	}
 }
+```

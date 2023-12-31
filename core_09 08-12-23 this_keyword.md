@@ -1,7 +1,7 @@
-this keyword in java
---------------------
--> this keyword is special reference variable that automatically gets created to store object's address.
+##this keyword in java
+* this keyword is special reference variable that automatically gets created to store object's address.
 
+```java
 package p1;
 public class A {
 	public static void main(String[] args) {
@@ -15,7 +15,9 @@ public class A {
 	}
 	
 }
------
+```
+---
+```java
 package p1;
 public class A {
 	int X = 10;
@@ -29,8 +31,10 @@ public class A {
 	}
 	
 }
+```
 
--> We cannot use this keyword inside static method
+* We cannot use this keyword inside static method
+```java
 package p1;
 public class A {
 	int X = 10;
@@ -43,8 +47,9 @@ public class A {
 	}
 	
 }
-
-------
+```
+---
+```java
 package p1;
 
 public class A {
@@ -61,7 +66,9 @@ public class A {
 		System.out.println("From test2");
 	}
 }
------
+```
+---
+```java
 package p1;
 
 public class A {
@@ -76,9 +83,11 @@ public class A {
 		//the static field A.x should be accessable in a static way
 	}
 }
+```
 
--> this keyword will automaticallyhold the current objects address that is running in our progeam
+* this keyword will automaticallyhold the current objects address that is running in our progeam
 
+```java
 package p1;
 
 public class A {
@@ -96,4 +105,4 @@ public class A {
 		System.out.println(this);
 	}
 }
-
+```

@@ -1,3 +1,4 @@
+```java
 package p1;
 public class A {
 	  int x =10;
@@ -5,7 +6,8 @@ public class A {
 		  System.out.println("From test");
 	  }
 }
-
+```
+```java
 package p1;
 public class B extends A{
 	public static void main(String[] args) {
@@ -14,27 +16,35 @@ public class B extends A{
 		b1.test();
 	}
 }
+```
 
------------------------
-Multilevel Inheritance
------------------------
+####Multilevel Inheritance
 
-A ------> B -------> C
+```mermaid
+graph LR
+A((A)) --> B((B)) --> C((C))
+```
 
+
+```java
 package p1;
 public class A { //test1()
 	  public void test1() {
 		  System.out.println(1);
 	  }
 }
+```
 
+```java
 package p1;
 public class B extends A{ //test1(),test2()
 	public void test2() {
 		System.out.println(2);
 	}
 }
+```
 
+```java
 package p1;
 public class C extends B{ //test1(),test2(),test3() 
 public void test3() {
@@ -47,50 +57,59 @@ public void test3() {
 	c1.test3();
 	}
 }
+```
 
-Note
-----
--> Java doesnot support multiple Inheritance at class level but supportS multiple inheritance in interfaces
--> Multiple inheritance leads to diamond problem as shown in below example.
+####Note
+* Java doesnot support multiple Inheritance at class level but supportS multiple inheritance in interfaces
+* Multiple inheritance leads to diamond problem as shown in below example.
 
-A ----------> C
-|             |
-|             |
-|             |
-|             |
-B ----------> D
+```mermaid
+graph LR
+A((A))-->B((B))
+A((A))-->C((C))
+B-->D((D))
+C-->D((D))
+```
 
 In the above diagram the members of parent class A is inherited twice to class D.
 
+```java
 package p1;
 public class A { 
 
 }
-
+```
+```java
 package p1;
 public class B extends A{ 
 	
 }
-
+```
+```java
 package p1;
 public class C extends A{ 
 
 }
+```
 
-A ----------> B
+```mermaid
+graph LR
+A((A))-->B((B))
 
-A ----------> C
+C((A))--> D((B))
+```
 
-----------------------------
-Non sub clases vs sub clases
-----------------------------
-Non sub clases
---------------
+##Non sub clases vs sub clases
+
+####Non sub clases
+
+```java
 package p1;
 public class A { 
 	  int x =10;
 }
-
+```
+```java
 package p1;
 public class B{ 
 	public static void main(String[] args) {
@@ -98,14 +117,17 @@ public class B{
 		System.out.println(a1.x);
 	}
 }
+```
 
-Sub clases
------------
+####Sub clases
+
+```java
 package p1;
 public class A { 
 	  int x =10;
 }
-
+```
+```java
 package p1;
 public class B extends A{ 
 	public static void main(String[] args) {
@@ -113,4 +135,5 @@ public class B extends A{
 		System.out.println(b1.x);
 	}
 }
+```
 

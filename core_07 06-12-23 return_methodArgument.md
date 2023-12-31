@@ -1,7 +1,8 @@
--> We can use "return" keyword insite void methods only
--> it ios optional to use
--> It will return control to method calling statement
+* We can use "return" keyword insite void methods only
+* it ios optional to use
+* It will return control to method calling statement
 
+```java
 public class A {
 	public static void main(String[] args) {
 		A a1 = new A();
@@ -11,19 +12,23 @@ public class A {
 		return;
 	}
 }
+```
 
 ----
 
 
+```java
 public class A {
 	public static void main(String[] args) {
 		System.out.println("Welcome");
         return;
 	}
 }
+```
 
 ----
 
+```java
 public class A {
 	public static void main(String[] args) {
 		System.out.println("Welcome");
@@ -31,13 +36,14 @@ public class A {
 		System.out.println(100); //Error
 	}
 }
+```
 
--> If we write only code after return keyword we will  get unrechable Error.
+* If we write only code after return keyword we will  get unrechable Error.
 
-return value
-------------
--> We can use return value keyword only inside not a void method & it is mandatory to be used.
+####return value
+* We can use return value keyword only inside not a void method & it is mandatory to be used.
 
+```java
 class A{
     psvm(){
         publuc int test(){ //Error
@@ -45,9 +51,11 @@ class A{
         }
     }
 }
+```
 
--> return value keyword wil return control and value to method calling statement.
+* return value keyword wil return control and value to method calling statement.
 
+```java
 class A{
     psvm(){
 
@@ -57,9 +65,10 @@ class A{
         sop(200); //unreachable code error
     }
 }
+```
 
-Method arguments
-----------------
+##Method arguments
+```java
 class A{
     psvm(){
         A a1 = new A();
@@ -70,9 +79,9 @@ class A{
 
     }
 }
-
---------
-
+```
+---
+```java
 public class A {
 	public static void main(String[] args) {
 		A a1 = new A();
@@ -83,8 +92,10 @@ public class A {
 		System.out.println(y);
 	}
 }
+```
 
---
+---
+```java
 public class A {
 	public static void main(String[] args) {
 		A a1 = new A();
@@ -96,8 +107,10 @@ public class A {
 		System.out.println(x[2]);
 	}
 }
+```
 
 ---
+```java
 public class A {
 	public static void main(String[] args) {
 		A a1 = new A();
@@ -111,8 +124,10 @@ public class A {
 		System.out.println("From test2");
 	}
 }
+```
 
  ---
+```java
  public class A {
 	public static void main(String[] args) {
 		A a1 = new A();
@@ -124,9 +139,11 @@ public class A {
 	System.out.println(100);
 	}		
 }
+```
 
 ---
 
+```java
 public class A {
 	public static void main(String[] args) {
 	A.test1();
@@ -139,3 +156,5 @@ public class A {
 		System.out.println(100);
 	}
 }
+
+```
