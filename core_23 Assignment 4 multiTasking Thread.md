@@ -1,8 +1,9 @@
 Threads 
 ------
--> Multitasking done at the program level is called as Threads
--> The main purpose of threads is improve the performance of the application by reducing execution time
+* Multitasking done at the program level is called as Threads
+* The main purpose of threads is improve the performance of the application by reducing execution time
 
+```java
 public class A extends Thread{ //run() , start()
 	
 	@Override
@@ -19,7 +20,9 @@ public class A extends Thread{ //run() , start()
 		}
 	}
 }
+```
 ---
+```java
 public class A extends Thread{ //run() , start()
 	String name;
 	A(String name){
@@ -32,7 +35,9 @@ public class A extends Thread{ //run() , start()
 		}
 	}
 }
+```
 
+```java
 public class B {
     public static void main(String[] args) {
     	A a1 = new A("xxx");
@@ -44,8 +49,10 @@ public class B {
     	a3.start();
     }
 }
+```
 ---
 
+```java
 public class A implements Runnable{
 	String name;
 	A(String name){
@@ -72,3 +79,4 @@ public class A implements Runnable{
 		}
 	}
 }
+```

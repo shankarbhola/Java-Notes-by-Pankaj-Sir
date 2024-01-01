@@ -1,5 +1,6 @@
-Reverse a given String
-----------------------
+#### Reverse a given String ####
+
+```java
 public class A {
     public static void main(String[] args) {
     	String str = "pankaj sir academy";
@@ -8,9 +9,11 @@ public class A {
 		}
     }
 }
+```
 
-count the number of words in the given string
----------------------------------------------
+#### count the number of words in the given string ####
+
+```java
 public class A {
     public static void main(String[] args) {
     	String str = "pankaj sir academy";
@@ -21,11 +24,13 @@ public class A {
 		}
     }
 }
+```
 
 ---
-write a program to check the opening bracket( and the closing bracket ) are same or not
+#### write a program to check the opening bracket( and the closing bracket ) are same or not ####
 
 
+```java
 import java.util.Scanner;
 public class A {
     public static void main(String[] args) {
@@ -49,11 +54,12 @@ public class A {
 		}
     }
 }
+```
 
-Star pattern 
-------------
-Square box
-----------
+##Star pattern ##
+#### Square box ####
+
+```java
 public class A {
 	public static void main(String[] args) {
 		for (int i = 0; i < 5; i++) {
@@ -64,8 +70,10 @@ public class A {
 		}
 	}
 }
+```
 
 ----
+```java
 public class A {
 	public static void main(String[] args) {
 		for (int i = 0; i < 5; i++) {
@@ -86,3 +94,4 @@ public class A {
 		}
 	}
 }
+```

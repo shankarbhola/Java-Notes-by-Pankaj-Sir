@@ -1,7 +1,7 @@
-Interfaces
----------
--> An  interface can consist of only incomplete methods/abstract methods in it
+### Interfaces ###
+* An  interface can consist of only incomplete methods/abstract methods in it
 
+```java
 package p1;
 public interface A {
 	//abstract method - incomplete methods
@@ -9,37 +9,43 @@ public interface A {
 	public void example() {//Error
 	}
 }
+```
 
-inheritance from
+#### inheritance from ####
 
-      (extends)
-class--------->class
+```mermaid
+graph LR
+A(class) -- extends --> B(class)
+C(interface) -- extends --> D(interface)
+E(interface) -- implements --> F(class)
+```
 
-         (extends)
-interface--------->interface
+* When we inherit incomplete method from an interface to class then we need to override and complete that method in class or else you will get error
 
-         (implements)
-interface--------->class
-
--> When we inherit incomplete method from an interface to class then we need to override and complete that method in class or else you will get error
-
+```java
 package p1;
 public interface A {
 	public void test();
 
 }
+```
 
+```java
 package p1;
 public class B implements A{ //Error
 
 }
+```
 ------
+```java
 package p1;
 public interface A {
 	public void test();
 
 }
+```
 
+```java
 package p1;
 public class B implements A{
 
@@ -52,15 +58,19 @@ public class B implements A{
 		b1.test();
 	}
 }
+```
 
--> When a class implements a interface then that class is getting into contract with interface to complete all inherired method.
+* When a class implements a interface then that class is getting into contract with interface to complete all inherired method.
 
+```java
 package p1;
 public interface A {
 	public void test1();
 	public void test2();
 }
+```
 
+```java
 package p1;
 public class B implements A {
 	@Override
@@ -77,20 +87,27 @@ public class B implements A {
 		b1.test2();
 	}
 }
+```
+```mermaid
+graph LR
+A(A interface) -- extends --> B(B interface)-- implements --> C(C class)
+```
 
-             (extends)               (implements)
-A(interface) ----------> B(interface) ----------> C(class)
-Ex:
+```java
 package p1;
 public interface A {
 	public void test1();
 }
+```
 
+```java
 package p1;
 public interface B extends A {
 	public void test2();
 }
+```
 
+```java
 package p1;
 public class C implements B{
 	@Override
@@ -108,24 +125,32 @@ public class C implements B{
 		c1.test2();
 	}
 }
+```
 
--> Interface supports multiple inheritance in java
+* Interface supports multiple inheritance in java
+```java
 package p1;
 public interface A {
 	public void test1();
 }
+```
 
+```java
 package p1;
 public interface B{
 	public void test2();
 }
+```
 
+```java
 package p1;
 public interface C extends B,A{
 	public void test3();
 	
 }
+```
 
+```java
 package p1;
 
 public class D implements C{
@@ -150,18 +175,23 @@ public class D implements C{
 		d1.test3();
 	}
 }
--------
+```
+---
+```java
 package p1;
 public interface A {
 	public void test1();
 }
+```
 
+```java
 package p1;
 public interface B{
 	public void test2();
 }
-
-	package p1;
+```
+```java
+package p1;
 	public class C implements B,A{
 	
 		@Override
@@ -178,5 +208,6 @@ public interface B{
 			c1.test1();
 			c1.test2();
 		}
-		
 	}
+```
+

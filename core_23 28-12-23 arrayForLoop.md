@@ -1,15 +1,17 @@
-NumbeerFormatException
-----------------------
+### NumbeerFormatException ###
 It occurs when invalid string to number conversion is done as shown below
 
+```java
 public class A {
     public static void main(String[] args) {
     	String x1 = "mike100";
     	int y1= Integer.parseInt(x1);
     }
 }
+```
 
 ---
+```java
 public class A {
     public static void main(String[] args) {
     	try {
@@ -21,12 +23,13 @@ public class A {
     	System.out.println("Welcome");
     }
 }
+```
 
-Array
------
+### Array ###
 In java, an array is a data structure that allows you to store multiple value of the same type under a single variable name.
 Array are useful when you need to work with a collection of elements of the same data type.
 
+```java
 public class A {
     public static void main(String[] args) {
     	int[] age = new int[3];
@@ -39,10 +42,10 @@ public class A {
     	System.out.println(age[2]);
     }
 }
+```
 
----
-For Loop
-----------
+### For Loop ###
+```java
 public class A {
     public static void main(String[] args) {
     	//For Loop
@@ -51,8 +54,10 @@ public class A {
 		}
     }
 }
+```
 
 ---
+```java
 public class A {
     public static void main(String[] args) {
     	for (int i = 0; i < 5; i++) { 
@@ -60,8 +65,10 @@ public class A {
 		}
     }
 }
+```
 
 ---
+```java
 public class A {
     public static void main(String[] args) {
     	for (int i = 5; i > 0; i--) { 
@@ -69,7 +76,9 @@ public class A {
 		}
     }
 }
+```
 ---
+```java
 public class A {
     public static void main(String[] args) {
     	for (int i = 0; i <= 5; i++) { 
@@ -77,9 +86,10 @@ public class A {
 		}
     }
 }
+```
 
-Scanner class
--------------
+### Scanner class ###
+```java
 import java.util.Scanner;
 
 public class A {
@@ -90,16 +100,18 @@ public class A {
 		System.out.println("My name is : "+name);
 	}
 }
+```
 
-OP
---
+```java
+OUTPUT
 Enter Your Name
 Bhola Shankar 
 My name is : Bhola
+```
 
 ---
+```java
 import java.util.Scanner;
-
 public class A {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -108,12 +120,15 @@ public class A {
 		System.out.println("My name is : "+name);
 	}
 }
-OP
---
+```
+```java
+OUTPUT
 Enter Your Name
 Bhola Shankar
 My name is : Bhola Shankar
+```
 ---
+```java
 import java.util.Scanner;
 
 public class A {
@@ -124,12 +139,15 @@ public class A {
 		System.out.println("My name is : "+age);
 	}
 }
-OP
---
+```
+```java
+OUTPUT
 Enter Your Age
 20
 My name is : 20
+```
 ---
+```java
 import java.util.Scanner;
 
 public class A {
@@ -140,13 +158,16 @@ public class A {
 		System.out.println("My weight is : "+weight);
 	}
 }
-OP
---
+```
+```java
+OUTPUT
 Enter Your Weight
 78.5
 My weight is : 78.5
+```
 
 ---
+```java
 public class A {
 	public static void main(String[] args) {
 		int[] x = new int[3];
@@ -159,3 +180,4 @@ public class A {
 		}
 	}
 }
+```

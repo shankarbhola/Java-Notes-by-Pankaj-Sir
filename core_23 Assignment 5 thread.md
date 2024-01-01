@@ -1,16 +1,11 @@
-                 Reservation
-                 ------------
-                 -          -
-      ------------ 1 Ticket ---------------
-      -          -          -             -
-      -          ------------             -
-      -                                   -
-      -                                   - 
-      -                                   -
-      -                                   -
-   Person 1          Same time          Person 2
 
-
+```mermaid
+graph LR
+A[Reservation <br> 1 Ticket]
+B((person 1))-- same time -->A
+C((person 2)) -- same time -->A
+```
+```java
 public class A {
 	int balance = 0;
 
@@ -62,6 +57,7 @@ public class A {
 		}
 	}
 }
+```
 
--> if threads operating in a non-synchronized manner then the data corruption happen
+* if threads operating in a non-synchronized manner then the data corruption happen
 
