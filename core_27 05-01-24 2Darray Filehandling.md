@@ -46,7 +46,7 @@ public class A {
 	}
 }
 ```
-#### exist() ###
+**exist()**
 * This is a nonstatic method present in file class.
 * It checks whether the file exist in given path .
 * If yes it return boolean value true or if does not exist then it will return false.
@@ -63,7 +63,7 @@ public class A {
 }
 
 ```
-#### delete() ####
+**delete()**
 * This is a nonstatic method present in file class.
 * If the file deleted then it return boolean value true or else it will false false.
 
