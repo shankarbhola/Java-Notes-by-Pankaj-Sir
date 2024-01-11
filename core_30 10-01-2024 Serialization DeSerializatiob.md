@@ -4,7 +4,7 @@ A a1 = new  A();
 
 ```mermaid
 graph LR
-A((Ram Object ))-- Serialization ( 0's a& 1's ) -->B[010110... <br> ........... <br> ........... <br> file.ser]
+A((Ram Object )) -- Serialization ( 0's a& 1's ) -->B[010110... <br> ........... <br> ........... <br> file.ser]
 B-- De-Serialization -->C((Ram Object))
 ```
 
