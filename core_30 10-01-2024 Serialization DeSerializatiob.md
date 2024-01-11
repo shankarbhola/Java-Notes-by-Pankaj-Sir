@@ -6,7 +6,7 @@ A a1 = new  A();
 graph LR
 A((Ram Object ))
 B[010110... <br> ........... <br> ........... <br> file.ser]
-A  -- Serialization ( 0's a& 1's ) --> B
+A  -- Serialization  0's a& 1's  --> B
 C((Ram Object))
 B-- De-Serialization --> C
 ```
