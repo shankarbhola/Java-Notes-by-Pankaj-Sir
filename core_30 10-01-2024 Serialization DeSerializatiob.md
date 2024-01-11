@@ -4,8 +4,11 @@ A a1 = new  A();
 
 ```mermaid
 graph LR
-A((Ram Object )) -- Serialization ( 0's a& 1's ) -->B[010110... <br> ........... <br> ........... <br> file.ser]
-B-- De-Serialization -->C((Ram Object))
+A((Ram Object ))
+B[010110... <br> ........... <br> ........... <br> file.ser]
+A  -- Serialization ( 0's a& 1's ) --> B
+C((Ram Object))
+B-- De-Serialization --> C
 ```
 
 * In Serialization we converts object state to binaries and then store that into file permanently.
