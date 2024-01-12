@@ -9,7 +9,7 @@
 
 **MySQL Database Installation**
 Go to https://dev.mysql.com/downloads/windows/installer/8.0.html
-Download and install
+Download mysql-installer-community and install
 
 * create new sql connection 
 * login 
@@ -48,6 +48,21 @@ select * from registration
 select name, city from registration
 ```
 
+```mermaid
+graph LR
+
+A[Java Code <br>]
+B[Database] 
+C{{Connector J}}
+A<--->C
+C<--->B
+
+```
 
 Go to https://dev.mysql.com/downloads/connector/j/
-
+Download connectoe J
+* Extract the zip file 
+* copy the mysql-connector-j jar file
+* open eclips and create a java project
+* create a folder named "lib" under the java project
+* paste mysql-connector-j jar file inside lib folder
