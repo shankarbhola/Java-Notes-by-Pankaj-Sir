@@ -141,7 +141,7 @@ public class A implements Cloneable {
 hashcode() will return integer represent of memory address
 
 ```java
-public class A implements Cloneable {
+public class A {
 	public static void main(String[] args) {
 		A a1 = new A();
 		System.out.println(a1.hashCode());
