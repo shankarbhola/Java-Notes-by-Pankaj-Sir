@@ -1,6 +1,7 @@
 **Linking jar file to java project**
 * Right click on project
 * Go to properties
+* Go to Java Build Path
 * click on Libraries
 * Select Jre system library 
 * Select module path
