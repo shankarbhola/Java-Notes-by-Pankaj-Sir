@@ -13,6 +13,7 @@ Download mysql-installer-community and install
 
 * create new sql connection 
 * login 
+
 **Create new database**
 
 ```sql
