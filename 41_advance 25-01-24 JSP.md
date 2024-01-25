@@ -13,7 +13,7 @@
 * cannot use access specifier inside Scriptlet tag
 * cannot create static/ non-static variables
 * cannot create static/ non-static methods
-```js
+```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -30,7 +30,7 @@ System.out.println("Hello");
 </html>
 ```
 ![picture](https://i.ibb.co/N2m5pcC/Untitled.png)
-```js
+```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
