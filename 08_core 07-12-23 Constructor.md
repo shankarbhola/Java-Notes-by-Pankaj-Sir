@@ -5,7 +5,7 @@
 ```java
 public class A {
 	A() {
-		System.out.println(100);
+		System.out.println(100); //Error
 	}
 	public static void main(String[] args) {
 		A a1 = new A();

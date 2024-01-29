@@ -1,6 +1,6 @@
 ### Return ###
 * We can use "return" keyword insite void methods only
-* it ios optional to use
+* it is optional to use
 * It will return control to method calling statement
 
 ```java
