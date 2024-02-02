@@ -52,12 +52,15 @@ public class VerifyLogin extends HttpServlet {
 		DAOserviceImpl service = new DAOserviceImpl();
 		service.connectDB();
 		boolean verifyLogin = service.verifyLogin(email, password);
-		System.out.println(verifyLogin);
+		boolean status = service.verifyLogin(email, password);
 		
-		if (verifyLogin) {
-			response.sendRedirect("https://google.com");
+		if (status) {
+			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/view/newRegistration.jsp");
+			rd.forward(request, response);
 		} else {
-			response.sendRedirect("https://google.com/juytrdcu7tfgh");
+			request.setAttribute("errmsg", "Invalid Username/Password");
+			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+			rd.forward(request, response);
 		}
 	}
 
