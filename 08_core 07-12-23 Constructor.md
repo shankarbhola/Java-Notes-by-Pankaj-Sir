@@ -18,7 +18,7 @@ public class A {
 ```java
 public class A {
 	A() {
-		return 200;
+		return 200; //Error
 	}
 	public static void main(String[] args) {
 		A a1 = new A();
