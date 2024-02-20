@@ -19,7 +19,6 @@ then open application.properties file
 
 For connecting to the database
 
-```application.properties```
 ```properties
 #application.properties
 
