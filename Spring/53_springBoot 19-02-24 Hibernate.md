@@ -18,7 +18,8 @@ Open src/main/resources
 then open application.properties file
 
 For connecting to the database
-```properties [application.properties]
+```properties
+```application.properties```
 #application.properties
 
 spring.datasource.url=jdbc:mysql://localhost:3306/demo-2
