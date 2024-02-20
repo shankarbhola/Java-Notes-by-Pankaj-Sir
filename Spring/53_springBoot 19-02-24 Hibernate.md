@@ -1,11 +1,17 @@
 
 Create new Spring starter project
+
 ![picture](https://i.ibb.co/QnTHT0x/image.png)
+
 click next
+
 ![picture](https://i.ibb.co/qxw7RC4/image.png)
+
 select mysql driver
 then search jpa for hibernate
+
 ![](https://i.ibb.co/2jB64Pc/image.png)
+
 click finish
 
 Open src/main/resources
