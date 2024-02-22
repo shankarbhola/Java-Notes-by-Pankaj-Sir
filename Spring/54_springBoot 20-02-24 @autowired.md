@@ -39,3 +39,51 @@ public class B {
 }
 
 ```
+
+![](https://i.ibb.co/QvCB54C/image.png)
+
+* To create repository go to ```src/main.java```
+* create a new package ```com.demo.repository```
+
+```java
+//EmployeeRepository.java
+package com.demo.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.demo.entity.Employee;
+
+public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
+
+}
+```
+
+```java
+//src/test/java
+package com.demo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.demo.entity.Employee;
+import com.demo.repository.EmployeeRepository;
+
+@SpringBootTest
+class Demo2ApplicationTests {
+	
+	@Autowired
+	private EmployeeRepository employeeRepository;
+
+	@Test
+	void SaveEmployeeDetails() {
+		Employee e = new Employee();
+		e.setName("Amit");
+		e.setEmail("amit@gmail.com");
+		e.setSalary(5000);
+		
+		employeeRepository.save(e);
+	}
+
+}
+```
