@@ -38,13 +38,13 @@ import com.webapp.entity.Registration;
 import com.webapp.repository.RegistrationRepository;
 
 @RestController
+@RequestMapping("/api/marketing")
 public class RegistrationRestController {
 
 	@Autowired
 	private RegistrationRepository registrationRepository;
 	
 	@GetMapping
-	@RequestMapping("/api/marketing")
 	public List<Registration> getAllReg(){
 		//localhost:8080/api/marketing
 		List<Registration> registrations = registrationRepository.findAll();
