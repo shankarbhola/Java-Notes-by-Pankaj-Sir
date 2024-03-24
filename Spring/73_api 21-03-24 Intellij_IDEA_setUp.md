@@ -20,6 +20,7 @@ IntelliJ IDEA Installation
 * Create a JPA Entity
 
 ![alt text](https://i.ibb.co/Qfz7HV6/image.png)
+
 ![alt text](https://i.ibb.co/7t0NK39/image.png)
 
 * Click JPA Designer on top right corner
@@ -27,6 +28,7 @@ IntelliJ IDEA Installation
 ![alt text](https://i.ibb.co/qpmsnpc/image.png)
 
 * double click Basic Type
+
 ![alt text](https://i.ibb.co/56FFqfx/image.png)
 
 ![alt text](https://i.ibb.co/RCyKVLZ/image.png)
@@ -47,6 +49,7 @@ Older versions of lombok doesnot have @Data, so if @Data doesnet work then use @
 * create a JPA repository inside `com.ums.repository` package
 
 ![alt text](https://i.ibb.co/4Pq0mdN/image.png)
+
 ![alt text](https://i.ibb.co/pZfSG8m/image.png)
 
 * select entity class then create
