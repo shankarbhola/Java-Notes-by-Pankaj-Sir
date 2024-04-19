@@ -95,7 +95,7 @@ public class EmployeeController {
 
 ```
 
-![alt text](https://i.ibb.co/Gp0shxS/image.png)
+![img](https://i.ibb.co/Gp0shxS/image.png)
 
 
 **Many to many Mapping**
