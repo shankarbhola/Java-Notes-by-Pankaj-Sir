@@ -4,7 +4,7 @@
 * go to file , select new model
 * select add diagram
 
-**one to many maping**
+**many to one maping**
 
 ![alt text](https://i.ibb.co/Jsz9mgV/image.png)
 
@@ -98,6 +98,3 @@ public class EmployeeController {
 ![alt text](https://i.ibb.co/Gp0shxS/image.png)
 
 
-**Many to many Mapping**
-
-![alt text](https://i.ibb.co/QJ9T0jz/image.png)
