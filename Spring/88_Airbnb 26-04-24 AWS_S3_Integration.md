@@ -92,8 +92,8 @@
 * add this to application.properties file
 
 ```properties
-accessKey=AKIAW3MEDYT6IRT42OYP
-secretKey=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
+accessKey=************************
+secretKey=*************************
 region=eu-north-1
 cloud.aws.region.static=eu-north-1
 cloud.aws.region.auto=false
