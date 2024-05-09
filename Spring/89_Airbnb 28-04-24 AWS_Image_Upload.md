@@ -88,6 +88,13 @@ public class ImageController {
 ![alt text](https://i.ibb.co/1YN2VK0/image.png)
 
 
+* When you upload any image more than 1 MB, it will show error because, the default multipart file size is 1 MB
+* to overcome this problem , add this into properties file
+
+```properties
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB
+```
 
 **Find all images of a property**
 
@@ -96,6 +103,7 @@ public interface ImagesRepository extends JpaRepository<Images, Long> {
     List<Images> findByProperty_Id(Long id);
 }
 ```
+
 
 ```java
 @GetMapping("/propertyImages")
