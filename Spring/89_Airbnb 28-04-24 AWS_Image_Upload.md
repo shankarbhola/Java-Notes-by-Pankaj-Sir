@@ -110,3 +110,40 @@ public interface ImagesRepository extends JpaRepository<Images, Long> {
 
 ![alt text](https://i.ibb.co/mRW5R6P/image.png)
 
+**Delete image**
+```java
+@DeleteMapping("/deleteimage")
+    public ResponseEntity<?> deleteImaqe(
+            @RequestParam long imgeId, @RequestParam String bucketName
+    ){
+        Optional<Images> imagebyId = imagesRepository.findById(imgeId);
+        if (imagebyId.isPresent()){
+            Images image = imagebyId.get();
+            String imageUrl = image.getImageUrl();
+            bucketService.deleteFileByUrl(bucketName,imageUrl);
+            imagesRepository.deleteById(imgeId);
+            return new ResponseEntity<>("Image deleted successfully",HttpStatus.OK);
+        }
+        return new ResponseEntity<>("No image found",HttpStatus.BAD_REQUEST);
+        }
+```
+
+```java
+public void deleteFileByUrl(String bucketName,String fileUrl) {
+        try {
+            URL url = new URL(fileUrl);
+            String path = url.getPath();
+            System.out.println(path);
+            // Assuming the key is the part of the path after the bucket name
+            String key = path.substring(1); // Remove the leading '/'
+            System.out.println(key);
+            if (key != null) {
+                amazonS3.deleteObject(bucketName, key);
+            }
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
+
+    }
+```
