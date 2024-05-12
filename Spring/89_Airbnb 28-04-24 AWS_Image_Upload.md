@@ -99,6 +99,22 @@ spring.servlet.multipart.max-request-size=10MB
 **Find all images of a property**
 
 ```java
+public static List<ImageDto> convertToImageDtoList(List<Images> imagesList) {
+        List<ImageDto> imageDtoList = new ArrayList<>();
+
+        for (Images image : imagesList) {
+            ImageDto imageDto = new ImageDto();
+
+            imageDto.setId(image.getId());
+            imageDto.setImageUrl(image.getImageUrl());
+
+            imageDtoList.add(imageDto);
+        }
+
+        return imageDtoList;
+    }
+```
+```java
 public interface ImagesRepository extends JpaRepository<Images, Long> {
     List<Images> findByProperty_Id(Long id);
 }
@@ -112,7 +128,8 @@ public interface ImagesRepository extends JpaRepository<Images, Long> {
         if (images.isEmpty()) {
             return new ResponseEntity<>("No images found", HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<>(images, HttpStatus.OK);
+        List<ImageDto> imageDtos = convertToImageDtoList(images);
+        return new ResponseEntity<>(imageDtos, HttpStatus.OK);
     }
 ```
 
