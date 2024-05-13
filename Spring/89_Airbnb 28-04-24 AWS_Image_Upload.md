@@ -103,7 +103,21 @@ public interface ImagesRepository extends JpaRepository<Images, Long> {
     List<Images> findByProperty_Id(Long id);
 }
 ```
+* Create ImageDto class
 
+```java
+package com.ums.payload;
+
+import lombok.Data;
+
+@Data
+public class ImageDto {
+    private long id;
+    private String imageUrl;
+}
+
+```
+* create controller layer
 ```java
 @GetMapping("/propertyImages")
     public ResponseEntity<?> fetchPropertyImages(@RequestParam long propertyId) {
