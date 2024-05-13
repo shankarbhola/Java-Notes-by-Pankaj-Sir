@@ -99,6 +99,22 @@ spring.servlet.multipart.max-request-size=10MB
 **Find all images of a property**
 
 ```java
+public interface ImagesRepository extends JpaRepository<Images, Long> {
+    List<Images> findByProperty_Id(Long id);
+}
+```
+
+```java
+@GetMapping("/propertyImages")
+    public ResponseEntity<?> fetchPropertyImages(@RequestParam long propertyId) {
+        List<Images> images = imagesRepository.findByProperty_Id(propertyId);
+        if (images.isEmpty()) {
+            return new ResponseEntity<>("No images found", HttpStatus.NOT_FOUND);
+        }
+        List<ImageDto> imageDtos = convertToImageDtoList(images);
+        return new ResponseEntity<>(imageDtos, HttpStatus.OK);
+    }
+
 public static List<ImageDto> convertToImageDtoList(List<Images> imagesList) {
         List<ImageDto> imageDtoList = new ArrayList<>();
 
@@ -112,24 +128,6 @@ public static List<ImageDto> convertToImageDtoList(List<Images> imagesList) {
         }
 
         return imageDtoList;
-    }
-```
-```java
-public interface ImagesRepository extends JpaRepository<Images, Long> {
-    List<Images> findByProperty_Id(Long id);
-}
-```
-
-
-```java
-@GetMapping("/propertyImages")
-    public ResponseEntity<?> fetchPropertyImages(@RequestParam long propertyId) {
-        List<Images> images = imagesRepository.findByProperty_Id(propertyId);
-        if (images.isEmpty()) {
-            return new ResponseEntity<>("No images found", HttpStatus.NOT_FOUND);
-        }
-        List<ImageDto> imageDtos = convertToImageDtoList(images);
-        return new ResponseEntity<>(imageDtos, HttpStatus.OK);
     }
 ```
 
