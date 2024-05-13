@@ -154,6 +154,7 @@ public interface ImagesRepository extends JpaRepository<Images, Long> {
 ```
 
 ```java
+//BucketService
 public void deleteFileByUrl(String bucketName,String fileUrl) {
         try {
             URL url = new URL(fileUrl);
