@@ -131,7 +131,7 @@ public static List<ImageDto> convertToImageDtoList(List<Images> imagesList) {
     }
 ```
 
-![alt text](https://i.ibb.co/mRW5R6P/image.png)
+![alt text](https://i.ibb.co/hCdXv0s/image.png)
 
 **Delete image**
 ```java
