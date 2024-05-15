@@ -147,6 +147,6 @@ public class ExceptionHandlerClass {
 
 ```
 
-* here exception is resource not found, then resourceNotFound method will run 
+* if exception is resource not found, then resourceNotFound method will run 
 * if any other exception occurs, GlobalExceptionHandler method will run
 
