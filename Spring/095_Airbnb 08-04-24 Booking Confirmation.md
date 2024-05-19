@@ -15,6 +15,7 @@ public static MultipartFile convert(String filePath) throws IOException {
 ```
 
 **Note**
+<br>
 If you getting erron on `MockMultipartFile` then add the below dependency
 
 ```xml
@@ -42,7 +43,7 @@ If you getting erron on `MockMultipartFile` then add the below dependency
 bitly_token=****************************************
 ```
 
-* create a setvice class for bitly
+* create a service class for bitly
 
 ```java
 package com.ums.service;
