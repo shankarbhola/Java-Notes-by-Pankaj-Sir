@@ -14,6 +14,16 @@ public static MultipartFile convert(String filePath) throws IOException {
     }
 ```
 
+**Note**
+If you getting erron on `MockMultipartFile` then add the below dependency
+
+```xml
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-test</artifactId>
+</dependency>
+```
+
 * if we upload the file into s3 bucket it will return a long url
 * if we send this url in sms , the cost of the sms will double
 * so that we have to short the url
