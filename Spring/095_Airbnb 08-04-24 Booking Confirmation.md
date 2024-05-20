@@ -43,6 +43,15 @@ If you getting erron on `MockMultipartFile` then add the below dependency
 bitly_token=****************************************
 ```
 
+* add this dependency
+```xml
+<dependency>
+    <groupId>com.opsmatters</groupId>
+    <artifactId>bitly-java-api</artifactId>
+    <version>1.0.2</version>
+</dependency>
+```
+
 * create a service class for bitly
 
 ```java
