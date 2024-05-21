@@ -38,6 +38,18 @@ public interface FavouriteRepository extends JpaRepository<Favourite, Long> {
 ```
 
 ```java
+package com.ums.controller;
+
+import com.ums.Entity.AppUser;
+import com.ums.Entity.Favourite;
+import com.ums.Entity.Property;
+import com.ums.repository.FavouriteRepository;
+import com.ums.repository.PropertyRepository;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.web.bind.annotation.*;
+
 @RestController
 @RequestMapping("/api/v1/favorite")
 public class FavouriteController {
@@ -66,9 +78,16 @@ public class FavouriteController {
             Favourite savedFavourite = favouriteRepository.save(favourite);
             return new ResponseEntity<>(savedFavourite, HttpStatus.OK);
         }
-        return new ResponseEntity<>("Already added to favourite", HttpStatus.BAD_REQUEST);
+        if (byAppUserIdAndPropertyId != null) {
+            favouriteRepository.deleteById(byAppUserIdAndPropertyId.getId());
+            return new ResponseEntity<>("Removed From Favourite", HttpStatus.OK);
+        }
+
+        return new ResponseEntity<>("Something Wrong", HttpStatus.BAD_REQUEST);
     }
+
 }
+
 ```
 
 **Users Favourite List**
