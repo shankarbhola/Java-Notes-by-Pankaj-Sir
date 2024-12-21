@@ -87,7 +87,7 @@ public class A {
 
 # OOPS #
 ## Inheritance ##
-Here we inherit the members of parent class to child class so that we can refuse these members.
+Here we inherit the members of parent class to child class so that we can reuse these members.
 
 ```java
 package p1;
